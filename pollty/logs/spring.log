@@ -1,0 +1,381 @@
+2018-ago-13 21:00:04.339 INFO  [restartedMain] i.g.t.TaskListApplication - Starting TaskListApplication on DESKTOP-521AA1U with PID 16832 (C:\Users\Guillermo\git\task-list\target\classes started by Guillermo in C:\Users\Guillermo\git\task-list)
+2018-ago-13 21:00:04.340 INFO  [restartedMain] i.g.t.TaskListApplication - No active profile set, falling back to default profiles: default
+2018-ago-13 21:00:04.342 INFO  [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5dfe0fae: startup date [Mon Aug 13 21:00:04 CST 2018]; root of context hierarchy
+2018-ago-13 21:00:04.713 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-ago-13 21:00:04.714 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2018-ago-13 21:00:04.714 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-ago-13 21:00:04.728 INFO  [localhost-startStop-1] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2018-ago-13 21:00:04.729 INFO  [localhost-startStop-1] o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 387 ms
+2018-ago-13 21:00:04.735 INFO  [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-ago-13 21:00:04.736 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-ago-13 21:00:04.736 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-ago-13 21:00:04.736 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-ago-13 21:00:04.736 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-ago-13 21:00:04.765 INFO  [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-ago-13 21:00:04.784 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5dfe0fae: startup date [Mon Aug 13 21:00:04 CST 2018]; root of context hierarchy
+2018-ago-13 21:00:04.789 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/home],methods=[GET]}" onto public java.lang.String io.gdiazs.tasklist.controllers.HomeController.showHome(org.springframework.ui.Model)
+2018-ago-13 21:00:04.791 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/task/new],methods=[GET]}" onto public java.lang.String io.gdiazs.tasklist.controllers.TaskController.showTaskForm(org.springframework.ui.Model)
+2018-ago-13 21:00:04.791 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/task],methods=[GET]}" onto public java.lang.String io.gdiazs.tasklist.controllers.TaskController.showTasks(org.springframework.ui.Model)
+2018-ago-13 21:00:04.791 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/task/delete/{id}],methods=[GET]}" onto public java.lang.String io.gdiazs.tasklist.controllers.TaskController.deleteTask(java.lang.String)
+2018-ago-13 21:00:04.791 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/task/add],methods=[POST]}" onto public java.lang.String io.gdiazs.tasklist.controllers.TaskController.addTask(io.gdiazs.tasklist.models.TaskModel)
+2018-ago-13 21:00:04.792 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-ago-13 21:00:04.793 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-ago-13 21:00:04.797 INFO  [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-ago-13 21:00:04.798 INFO  [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-ago-13 21:00:04.833 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-ago-13 21:00:04.841 INFO  [restartedMain] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-ago-13 21:00:04.853 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-ago-13 21:00:04.854 INFO  [restartedMain] i.g.t.TaskListApplication - Started TaskListApplication in 0.568 seconds (JVM running for 541.898)
+2018-ago-13 21:00:04.857 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2018-ago-13 21:00:04.858 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-ago-13 21:00:04.858 INFO  [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-ago-13 21:00:04.860 INFO  [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 2 ms
+2018-ago-13 21:00:08.281 INFO  [Thread-41] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5dfe0fae: startup date [Mon Aug 13 21:00:04 CST 2018]; root of context hierarchy
+2018-ago-13 21:00:08.283 INFO  [Thread-41] o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-ago-13 21:00:08.758 INFO  [restartedMain] i.g.t.TaskListApplication - Starting TaskListApplication on DESKTOP-521AA1U with PID 16832 (C:\Users\Guillermo\git\task-list\target\classes started by Guillermo in C:\Users\Guillermo\git\task-list)
+2018-ago-13 21:00:08.759 INFO  [restartedMain] i.g.t.TaskListApplication - No active profile set, falling back to default profiles: default
+2018-ago-13 21:00:08.761 INFO  [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1e09e82c: startup date [Mon Aug 13 21:00:08 CST 2018]; root of context hierarchy
+2018-ago-13 21:00:09.154 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-ago-13 21:00:09.155 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2018-ago-13 21:00:09.155 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-ago-13 21:00:09.170 INFO  [localhost-startStop-1] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2018-ago-13 21:00:09.171 INFO  [localhost-startStop-1] o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 410 ms
+2018-ago-13 21:00:09.178 INFO  [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-ago-13 21:00:09.178 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-ago-13 21:00:09.178 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-ago-13 21:00:09.178 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-ago-13 21:00:09.178 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-ago-13 21:00:09.208 INFO  [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-ago-13 21:00:09.228 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1e09e82c: startup date [Mon Aug 13 21:00:08 CST 2018]; root of context hierarchy
+2018-ago-13 21:00:09.232 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/home],methods=[GET]}" onto public java.lang.String io.gdiazs.tasklist.controllers.HomeController.showHome(org.springframework.ui.Model)
+2018-ago-13 21:00:09.235 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/task/new],methods=[GET]}" onto public java.lang.String io.gdiazs.tasklist.controllers.TaskController.showTaskForm(org.springframework.ui.Model)
+2018-ago-13 21:00:09.235 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/task],methods=[GET]}" onto public java.lang.String io.gdiazs.tasklist.controllers.TaskController.showTasks(org.springframework.ui.Model)
+2018-ago-13 21:00:09.235 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/task/delete/{id}],methods=[GET]}" onto public java.lang.String io.gdiazs.tasklist.controllers.TaskController.deleteTask(java.lang.String)
+2018-ago-13 21:00:09.235 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/task/add],methods=[POST]}" onto public java.lang.String io.gdiazs.tasklist.controllers.TaskController.addTask(io.gdiazs.tasklist.models.TaskModel)
+2018-ago-13 21:00:09.237 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-ago-13 21:00:09.237 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-ago-13 21:00:09.241 INFO  [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-ago-13 21:00:09.241 INFO  [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-ago-13 21:00:09.275 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-ago-13 21:00:09.282 INFO  [restartedMain] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-ago-13 21:00:09.290 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-ago-13 21:00:09.292 INFO  [restartedMain] i.g.t.TaskListApplication - Started TaskListApplication in 0.577 seconds (JVM running for 546.335)
+2018-ago-13 21:00:09.293 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2018-ago-13 21:00:09.296 INFO  [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-ago-13 21:00:09.296 INFO  [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-ago-13 21:00:09.298 INFO  [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 1 ms
+2018-ago-13 21:01:07.449 INFO  [Thread-47] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1e09e82c: startup date [Mon Aug 13 21:00:08 CST 2018]; root of context hierarchy
+2018-ago-13 21:01:07.453 INFO  [Thread-47] o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-ago-13 21:01:07.867 INFO  [restartedMain] i.g.t.TaskListApplication - Starting TaskListApplication on DESKTOP-521AA1U with PID 16832 (C:\Users\Guillermo\git\task-list\target\classes started by Guillermo in C:\Users\Guillermo\git\task-list)
+2018-ago-13 21:01:07.867 INFO  [restartedMain] i.g.t.TaskListApplication - No active profile set, falling back to default profiles: default
+2018-ago-13 21:01:07.869 INFO  [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@89b19a8: startup date [Mon Aug 13 21:01:07 CST 2018]; root of context hierarchy
+2018-ago-13 21:01:08.285 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-ago-13 21:01:08.286 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2018-ago-13 21:01:08.286 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-ago-13 21:01:08.301 INFO  [localhost-startStop-1] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2018-ago-13 21:01:08.302 INFO  [localhost-startStop-1] o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 433 ms
+2018-ago-13 21:01:08.308 INFO  [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-ago-13 21:01:08.308 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-ago-13 21:01:08.308 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-ago-13 21:01:08.308 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-ago-13 21:01:08.308 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-ago-13 21:01:08.339 INFO  [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-ago-13 21:01:08.358 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@89b19a8: startup date [Mon Aug 13 21:01:07 CST 2018]; root of context hierarchy
+2018-ago-13 21:01:08.362 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/home],methods=[GET]}" onto public java.lang.String io.gdiazs.tasklist.controllers.HomeController.showHome(org.springframework.ui.Model)
+2018-ago-13 21:01:08.364 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/task/new],methods=[GET]}" onto public java.lang.String io.gdiazs.tasklist.controllers.TaskController.showTaskForm(org.springframework.ui.Model)
+2018-ago-13 21:01:08.365 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/task],methods=[GET]}" onto public java.lang.String io.gdiazs.tasklist.controllers.TaskController.showTasks(org.springframework.ui.Model)
+2018-ago-13 21:01:08.365 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/task/delete/{id}],methods=[GET]}" onto public java.lang.String io.gdiazs.tasklist.controllers.TaskController.deleteTask(java.lang.String)
+2018-ago-13 21:01:08.365 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/task/add],methods=[POST]}" onto public java.lang.String io.gdiazs.tasklist.controllers.TaskController.addTask(io.gdiazs.tasklist.models.TaskModel)
+2018-ago-13 21:01:08.366 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-ago-13 21:01:08.367 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-ago-13 21:01:08.372 INFO  [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-ago-13 21:01:08.372 INFO  [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-ago-13 21:01:08.414 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-ago-13 21:01:08.424 INFO  [restartedMain] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-ago-13 21:01:08.441 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-ago-13 21:01:08.443 INFO  [restartedMain] i.g.t.TaskListApplication - Started TaskListApplication in 0.609 seconds (JVM running for 605.487)
+2018-ago-13 21:01:08.444 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2018-ago-13 21:01:08.453 INFO  [http-nio-8080-exec-9] o.a.c.c.C.[.[.[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-ago-13 21:01:08.453 INFO  [http-nio-8080-exec-9] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-ago-13 21:01:08.455 INFO  [http-nio-8080-exec-9] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 2 ms
+2018-ago-13 21:01:11.884 INFO  [Thread-53] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@89b19a8: startup date [Mon Aug 13 21:01:07 CST 2018]; root of context hierarchy
+2018-ago-13 21:01:11.889 INFO  [Thread-53] o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-ago-13 21:01:12.275 INFO  [restartedMain] i.g.t.TaskListApplication - Starting TaskListApplication on DESKTOP-521AA1U with PID 16832 (C:\Users\Guillermo\git\task-list\target\classes started by Guillermo in C:\Users\Guillermo\git\task-list)
+2018-ago-13 21:01:12.276 INFO  [restartedMain] i.g.t.TaskListApplication - No active profile set, falling back to default profiles: default
+2018-ago-13 21:01:12.279 INFO  [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2f876413: startup date [Mon Aug 13 21:01:12 CST 2018]; root of context hierarchy
+2018-ago-13 21:01:12.695 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-ago-13 21:01:12.696 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2018-ago-13 21:01:12.696 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-ago-13 21:01:12.710 INFO  [localhost-startStop-1] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2018-ago-13 21:01:12.711 INFO  [localhost-startStop-1] o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 432 ms
+2018-ago-13 21:01:12.717 INFO  [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-ago-13 21:01:12.718 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-ago-13 21:01:12.718 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-ago-13 21:01:12.718 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-ago-13 21:01:12.718 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-ago-13 21:01:12.758 INFO  [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-ago-13 21:01:12.780 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2f876413: startup date [Mon Aug 13 21:01:12 CST 2018]; root of context hierarchy
+2018-ago-13 21:01:12.785 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/home],methods=[GET]}" onto public java.lang.String io.gdiazs.tasklist.controllers.HomeController.showHome(org.springframework.ui.Model)
+2018-ago-13 21:01:12.787 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/task/new],methods=[GET]}" onto public java.lang.String io.gdiazs.tasklist.controllers.TaskController.showTaskForm(org.springframework.ui.Model)
+2018-ago-13 21:01:12.787 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/task],methods=[GET]}" onto public java.lang.String io.gdiazs.tasklist.controllers.TaskController.showTasks(org.springframework.ui.Model)
+2018-ago-13 21:01:12.787 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/task/delete/{id}],methods=[GET]}" onto public java.lang.String io.gdiazs.tasklist.controllers.TaskController.deleteTask(java.lang.String)
+2018-ago-13 21:01:12.787 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/task/add],methods=[POST]}" onto public java.lang.String io.gdiazs.tasklist.controllers.TaskController.addTask(io.gdiazs.tasklist.models.TaskModel)
+2018-ago-13 21:01:12.788 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-ago-13 21:01:12.788 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-ago-13 21:01:12.792 INFO  [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-ago-13 21:01:12.793 INFO  [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-ago-13 21:01:12.824 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-ago-13 21:01:12.831 INFO  [restartedMain] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-ago-13 21:01:12.840 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-ago-13 21:01:12.841 INFO  [restartedMain] i.g.t.TaskListApplication - Started TaskListApplication in 0.602 seconds (JVM running for 609.885)
+2018-ago-13 21:01:12.842 INFO  [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-ago-13 21:01:12.842 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2018-ago-13 21:01:12.842 INFO  [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-ago-13 21:01:12.844 INFO  [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 2 ms
+2018-ago-13 21:01:13.981 INFO  [http-nio-8080-exec-3] i.g.t.s.TaskServiceFile - Tarea eliminada con id: 1
+2018-ago-13 21:01:21.600 INFO  [http-nio-8080-exec-6] i.g.t.s.TaskServiceFile - Nueva tarea insertada con id: 1534215681600
+2018-ago-13 21:02:00.121 INFO  [http-nio-8080-exec-8] i.g.t.s.TaskServiceFile - Tarea eliminada con id: 1534215681600
+2018-ago-13 21:02:00.668 INFO  [http-nio-8080-exec-9] i.g.t.s.TaskServiceFile - Tarea eliminada con id: 3
+2018-ago-13 21:02:01.552 INFO  [http-nio-8080-exec-1] i.g.t.s.TaskServiceFile - Tarea eliminada con id: 2
+2018-ago-13 21:02:14.796 ERROR [http-nio-8080-exec-4] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is io.gdiazs.tasklist.exceptions.TaskException: No se encontró la tarea con id: 111] with root cause
+io.gdiazs.tasklist.exceptions.TaskException: No se encontró la tarea con id: 111
+	at io.gdiazs.tasklist.services.TaskServiceFile.deleteTask(TaskServiceFile.java:97) ~[classes/:na]
+	at io.gdiazs.tasklist.controllers.TaskController.deleteTask(TaskController.java:51) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_161]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_161]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_161]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_161]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_161]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_161]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_161]
+2018-ago-13 21:03:11.824 INFO  [Thread-59] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2f876413: startup date [Mon Aug 13 21:01:12 CST 2018]; root of context hierarchy
+2018-ago-13 21:03:11.827 INFO  [Thread-59] o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-ago-13 21:03:12.258 INFO  [restartedMain] i.g.t.TaskListApplication - Starting TaskListApplication on DESKTOP-521AA1U with PID 16832 (C:\Users\Guillermo\git\task-list\target\classes started by Guillermo in C:\Users\Guillermo\git\task-list)
+2018-ago-13 21:03:12.258 INFO  [restartedMain] i.g.t.TaskListApplication - No active profile set, falling back to default profiles: default
+2018-ago-13 21:03:12.262 INFO  [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@27aac082: startup date [Mon Aug 13 21:03:12 CST 2018]; root of context hierarchy
+2018-ago-13 21:03:12.638 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-ago-13 21:03:12.640 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2018-ago-13 21:03:12.640 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-ago-13 21:03:12.654 INFO  [localhost-startStop-1] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2018-ago-13 21:03:12.655 INFO  [localhost-startStop-1] o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 393 ms
+2018-ago-13 21:03:12.661 INFO  [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-ago-13 21:03:12.661 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-ago-13 21:03:12.661 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-ago-13 21:03:12.661 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-ago-13 21:03:12.661 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-ago-13 21:03:12.695 INFO  [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-ago-13 21:03:12.715 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@27aac082: startup date [Mon Aug 13 21:03:12 CST 2018]; root of context hierarchy
+2018-ago-13 21:03:12.720 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/home],methods=[GET]}" onto public java.lang.String io.gdiazs.tasklist.controllers.HomeController.showHome(org.springframework.ui.Model)
+2018-ago-13 21:03:12.721 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/task/new],methods=[GET]}" onto public java.lang.String io.gdiazs.tasklist.controllers.TaskController.showTaskForm(org.springframework.ui.Model)
+2018-ago-13 21:03:12.722 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/task],methods=[GET]}" onto public java.lang.String io.gdiazs.tasklist.controllers.TaskController.showTasks(org.springframework.ui.Model)
+2018-ago-13 21:03:12.722 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/task/delete/{id}],methods=[GET]}" onto public java.lang.String io.gdiazs.tasklist.controllers.TaskController.deleteTask(java.lang.String)
+2018-ago-13 21:03:12.722 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/task/add],methods=[POST]}" onto public java.lang.String io.gdiazs.tasklist.controllers.TaskController.addTask(io.gdiazs.tasklist.models.TaskModel)
+2018-ago-13 21:03:12.723 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-ago-13 21:03:12.723 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-ago-13 21:03:12.727 INFO  [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-ago-13 21:03:12.727 INFO  [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-ago-13 21:03:12.766 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-ago-13 21:03:12.775 INFO  [restartedMain] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-ago-13 21:03:12.785 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-ago-13 21:03:12.785 INFO  [restartedMain] i.g.t.TaskListApplication - Started TaskListApplication in 0.565 seconds (JVM running for 729.829)
+2018-ago-13 21:03:12.787 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2018-ago-13 21:03:12.794 INFO  [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-ago-13 21:03:12.794 INFO  [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-ago-13 21:03:12.796 INFO  [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 2 ms
+2018-ago-13 21:03:12.804 ERROR [http-nio-8080-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is io.gdiazs.tasklist.exceptions.TaskException: No se encontró la tarea con id: 111] with root cause
+io.gdiazs.tasklist.exceptions.TaskException: No se encontró la tarea con id: 111
+	at io.gdiazs.tasklist.services.TaskServiceFile.deleteTask(TaskServiceFile.java:97) ~[classes/:na]
+	at io.gdiazs.tasklist.controllers.TaskController.deleteTask(TaskController.java:51) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_161]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_161]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_161]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_161]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_161]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_161]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_161]
+2018-ago-13 21:03:23.303 INFO  [Thread-65] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@27aac082: startup date [Mon Aug 13 21:03:12 CST 2018]; root of context hierarchy
+2018-ago-13 21:03:23.307 INFO  [Thread-65] o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-ago-13 21:03:23.689 INFO  [restartedMain] i.g.t.TaskListApplication - Starting TaskListApplication on DESKTOP-521AA1U with PID 16832 (C:\Users\Guillermo\git\task-list\target\classes started by Guillermo in C:\Users\Guillermo\git\task-list)
+2018-ago-13 21:03:23.689 INFO  [restartedMain] i.g.t.TaskListApplication - No active profile set, falling back to default profiles: default
+2018-ago-13 21:03:23.691 INFO  [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6da32720: startup date [Mon Aug 13 21:03:23 CST 2018]; root of context hierarchy
+2018-ago-13 21:03:24.081 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-ago-13 21:03:24.082 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2018-ago-13 21:03:24.082 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-ago-13 21:03:24.096 INFO  [localhost-startStop-1] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2018-ago-13 21:03:24.097 INFO  [localhost-startStop-1] o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 406 ms
+2018-ago-13 21:03:24.104 INFO  [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-ago-13 21:03:24.105 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-ago-13 21:03:24.105 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-ago-13 21:03:24.105 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-ago-13 21:03:24.105 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-ago-13 21:03:24.134 INFO  [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-ago-13 21:03:24.151 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6da32720: startup date [Mon Aug 13 21:03:23 CST 2018]; root of context hierarchy
+2018-ago-13 21:03:24.156 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/home],methods=[GET]}" onto public java.lang.String io.gdiazs.tasklist.controllers.HomeController.showHome(org.springframework.ui.Model)
+2018-ago-13 21:03:24.157 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/task/new],methods=[GET]}" onto public java.lang.String io.gdiazs.tasklist.controllers.TaskController.showTaskForm(org.springframework.ui.Model)
+2018-ago-13 21:03:24.158 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/task],methods=[GET]}" onto public java.lang.String io.gdiazs.tasklist.controllers.TaskController.showTasks(org.springframework.ui.Model)
+2018-ago-13 21:03:24.158 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/task/delete/{id}],methods=[GET]}" onto public java.lang.String io.gdiazs.tasklist.controllers.TaskController.deleteTask(java.lang.String)
+2018-ago-13 21:03:24.158 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/task/add],methods=[POST]}" onto public java.lang.String io.gdiazs.tasklist.controllers.TaskController.addTask(io.gdiazs.tasklist.models.TaskModel)
+2018-ago-13 21:03:24.159 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-ago-13 21:03:24.159 INFO  [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-ago-13 21:03:24.163 INFO  [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-ago-13 21:03:24.163 INFO  [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-ago-13 21:03:24.193 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-ago-13 21:03:24.200 INFO  [restartedMain] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-ago-13 21:03:24.210 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-ago-13 21:03:24.210 INFO  [restartedMain] i.g.t.TaskListApplication - Started TaskListApplication in 0.555 seconds (JVM running for 741.255)
+2018-ago-13 21:03:24.211 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2018-ago-13 21:03:24.216 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-ago-13 21:03:24.216 INFO  [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-ago-13 21:03:24.217 INFO  [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 1 ms
+2018-ago-13 21:03:24.222 ERROR [http-nio-8080-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is io.gdiazs.tasklist.exceptions.TaskException: No se encontró la tarea con id: 111] with root cause
+io.gdiazs.tasklist.exceptions.TaskException: No se encontró la tarea con id: 111
+	at io.gdiazs.tasklist.services.TaskServiceFile.deleteTask(TaskServiceFile.java:97) ~[classes/:na]
+	at io.gdiazs.tasklist.controllers.TaskController.deleteTask(TaskController.java:51) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_161]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_161]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_161]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_161]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_161]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_161]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_161]

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layouts/main}">
+
+<head layout:fragment="head">
+</head>
+
+<body>
+    <th:block layout:fragment="view">
+
+        <h1>Nueva Tarea</h1>
+        <form th:object="${task}" th:action="@{/task/add}" method="POST">
+            <div class="form-group">
+                <input th:field="*{title}" type="text" class="form-control"  placeholder="Título">
+            </div>
+
+            <div class="form-group">
+                <input type="text"  th:field="*{description}" class="form-control"  placeholder="Descripción">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Agregar</button>
+
+        </form>
+
+    </th:block>
+
+    <th:block layout:fragment="scripts">
+        <script>
+
+        </script>
+    </th:block>
+</body>
+
+</html>

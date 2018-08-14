@@ -16,14 +16,14 @@
         },
         {
             "type": "java",
-            "name": "Debug (Launch)-ThymeleafExamplesApplication<thymeleaf-examples>",
+            "name": "Debug (Launch)-TaskListApplication<task-list>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",
             "stopOnEntry": false,
-            "mainClass": "io.gdiazs.thymeleafexamples.ThymeleafExamplesApplication",
+            "mainClass": "io.gdiazs.tasklist.TaskListApplication",
             "args": "",
-            "projectName": "thymeleaf-examples"
+            "projectName": "task-list"
         },
         {
             "type": "java",

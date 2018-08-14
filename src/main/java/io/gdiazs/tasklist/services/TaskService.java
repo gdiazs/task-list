@@ -6,13 +6,13 @@ import io.gdiazs.tasklist.exceptions.TaskException;
 import io.gdiazs.tasklist.models.TaskModel;
 
 /**
- * TaskService
+ * TaskService Interface 
  */
 public interface TaskService {
 
     List<TaskModel> findAllTasks() throws TaskException;
 
-    List<TaskModel> insertTask(TaskModel taskModel) throws TaskException;
+    void insertTask(TaskModel taskModel) throws TaskException;
 
     TaskModel findOneTaskModel(String idTask) throws TaskException;
 

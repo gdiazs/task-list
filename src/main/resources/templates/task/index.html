@@ -1,26 +1,34 @@
 <!DOCTYPE html>
-<html  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layouts/main}">
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layouts/main}">
+
 <head layout:fragment="head">
 </head>
+
 <body>
     <th:block layout:fragment="view">
-        
+
         <div class="takscontainer">
             <h1>Lista de tareas</h1>
-            <ul th:each="task :  ${tasks}">
-                <li>
-                    <span th:text="${task.title}">Hola mundo</span>
+            <ul class="list-group task-list">
+                <li class="list-group-item" th:each="task : ${tasks}">
+                       
+                    <span th:text="${task.title}"></span> -
+                    <span th:text="${task.description}"></span>
+                    <a th:href="@{/task/delete/{id}(id=${task.id})}" class="btn btn-danger"><span aria-hidden="true">&times;</span></a>
+                   
                 </li>
             </ul>
-            
-            <a th:href="@{/task/new}" class="btn btn btn-success">Agregar</a>
+
+            <a th:href="@{/task/new}" class="btn btn btn-success">Nueva Tarea</a>
         </div>
 
     </th:block>
+
     <th:block layout:fragment="scripts">
         <script>
-           
+
         </script>
     </th:block>
 </body>
+
 </html>
